@@ -1,23 +1,35 @@
-.skills {
-    padding: 12px 0;
-    text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.skills img {
-    max-width: 45%;
-    transition: all 0.4s ease-in-out;
-    display: inline-block;
-    padding: 15px 0;
-    filter: grayscale(100);
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
 }
 
-.skills img:hover {
-    filter: none;
-    transform: scale(1.1);
+.box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 5vw;
 }
 
-@media (max-width: 768px) {
-    .skills img {
-        max-width: 40%;
-    }
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease-in;
 }
