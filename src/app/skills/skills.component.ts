@@ -8,45 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
 
   ngOnInit() {
-    this.startInterval();
-  }
-
-  logoMatic() {
-    const numbers: number[] = [];
-    while (numbers.length < 8) {
-      const randomNum = Math.floor(Math.random() * 24) + 1;
-      if (!numbers.includes(randomNum)) {
-        numbers.push(randomNum);
-      }
-    }
-    return numbers;
-  }
-
-  updateBoxes() {
-    const grid = document.getElementById('grid');
-
-    if (grid) {
-      const allBoxes = grid.querySelectorAll('.box');
-      allBoxes.forEach((box) => {
-        box.classList.add('hidden');
-        box.classList.remove('visible');
-      });
-
-      const order = this.logoMatic();
-
-      order.forEach((num) => {
-        const box = document.getElementById(`box${num}`);
-        if (box) {
-          box.classList.remove('hidden');
-          box.classList.add('visible');
-        }
-      });
-    }
-  }
-
-  startInterval() {
+    this.animateBoxes();
     setInterval(() => {
-      this.updateBoxes();
-    }, 1500);
+      this.animateBoxes();
+    }, 24 * 400);
   }
+
+  toggleVisibility(boxId: string, delay: number) {
+  const box = document.getElementById(boxId) as HTMLElement;
+
+  setTimeout(() => {
+        box.classList.remove('hidden');
+        box.classList.add('visible');
+        setTimeout(() => {
+            box.classList.remove('visible');
+            box.classList.add('hidden');
+        }, 1200);
+    }, delay);
+  }
+
+  animateBoxes() {
+      for (let i = 1; i <= 24; i++) {
+        const boxId = `box${i}`;
+        const delay = i * 400;
+        this.toggleVisibility(boxId, delay);
+      }
+  }
+    
 }
