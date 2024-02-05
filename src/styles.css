@@ -35,7 +35,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #3876BF;
+    background: #364f6b;
 }
   
 #preloader:before {
@@ -43,7 +43,7 @@ h6 {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #3876BF;
+    border: 6px solid #3FC1C9;
     border-top-color: #fff;
     border-bottom-color: #fff;
     border-radius: 50%;
@@ -72,7 +72,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #47b2e4;
+    background: #3FC1C9;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -86,7 +86,7 @@ h6 {
 }
   
 .back-to-top:hover {
-    background: #6bc1e9;
+    background: #FC5185;
     color: #fff;
 }
   
@@ -115,7 +115,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #638889;
+    color: #364F6B;
 }
   
 .section-title h2::before {
@@ -135,7 +135,7 @@ section {
     display: block;
     width: 40px;
     height: 3px;
-    background: #47b2e4;
+    background: #3FC1C9;
     bottom: 0;
     left: calc(50% - 20px);
 }
