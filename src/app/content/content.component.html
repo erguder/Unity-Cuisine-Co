@@ -1,1 +1,35 @@
-<p>content works!</p>
+<section class="menu section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>MENU</h2>
+        </div>
+
+        <ul id="menu-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-soup">Soup</li>
+            <li data-filter=".filter-appetizer">Appetizer</li>
+            <li data-filter=".filter-main">Main Dish</li>
+            <li data-filter=".filter-side">Side Dish</li>
+            <li data-filter=".filter-drink">Dessert</li>
+            <li data-filter=".filter-dessert">Drink</li>
+        </ul>
+
+        <div *ngIf="foodData" class="row">
+
+            <div *ngFor="let food of foodData" class="col-lg-6 filter-{{ food.category }}" data-aos="zoom-in" data-aos-delay="100">
+                <div class="meal d-flex align-items-start">
+                    <div class="pic"><img src="assets/img/food/{{food.image}}" class="img-fluid"></div>
+                    <div class="meal-info">
+                        <h4>{{ food.name }}</h4>
+                        <span>Category: {{ food.category }}</span>
+                        <span>Origin: {{ food.origin }}</span>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+
+    </div>
+</section>

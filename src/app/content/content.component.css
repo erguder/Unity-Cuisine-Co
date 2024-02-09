@@ -1,0 +1,77 @@
+.menu .meal {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.menu #menu-filters{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.menu #menu-filters li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1;
+    color: #444444;
+    transition: all 0.3s;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+
+.menu .meal .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 5%;
+}
+
+.menu .meal .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.menu .meal:hover {
+    transform: translateY(-10px);
+}
+
+.menu .meal .meal-info {
+    padding-left: 30px;
+}
+
+.menu .meal h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+}
+
+.menu .meal span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.menu .meal span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+}
+
+.menu .meal p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
