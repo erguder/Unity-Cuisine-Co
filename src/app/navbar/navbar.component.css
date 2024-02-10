@@ -3,11 +3,24 @@
     height: 60px;
 }
 
-.logo {
+.container {
+    display: flex;
+    align-items: center;
     height: 100px;
+}
+
+.logo {
+    position: relative;
+    top: 12px;
+    max-height: 100%;
+}
+
+.logo {
+    height: 200px;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
+    overflow: hidden;
 }
 
 .navbar ul {
@@ -30,7 +43,7 @@
     padding: 10px 0 10px 30px;
     font-size: 15px;
     font-weight: 500;
-    color: #fff;
+    color: #3A4D39;
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -54,7 +67,7 @@
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 50px;
-    color: #fff;
+    color: #3A4D39;
     font-size: 14px;
     border: 2px solid #739072;
     font-weight: 600;
@@ -132,7 +145,6 @@
         left: -100%;
     }
 }
-
 
 /* Mobile Navigation */
 
@@ -248,7 +260,7 @@
 #header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 5px;
+    padding: 0;
     background-color: #ECE3CE;
 }
   
@@ -256,14 +268,4 @@
 #header.header-inner-pages {
     background: rgba(40, 58, 90, 0.9);
 }
-  
-#header .logo {
-    font-size: 36px;
-    margin: 0;
-    margin-bottom: 10px;
-    padding: 0;
-    line-height: 1;
-    font-weight: 500;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
+

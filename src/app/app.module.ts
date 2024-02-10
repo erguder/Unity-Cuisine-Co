@@ -10,6 +10,8 @@ import { ContentComponent } from './content/content.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataService } from './services/data.service';
+import { FeaturedComponent } from './featured/featured.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { DataService } from './services/data.service';
     AboutComponent,
     ContentComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    FeaturedComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

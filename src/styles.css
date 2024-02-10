@@ -1,16 +1,16 @@
 body {
     color: #444444;
     background-color: #ECE3CE;
-    background-image: linear-gradient(180deg, #ECE3CE 0%, #739072 30%, #4F6F52 66%, #3A4D39 100%);
+    background-image: linear-gradient(180deg, #739072 0%, #ECE3CE 30%, #4F6F52 66%, #3A4D39 100%);
 }
-  
+
 a {
-    color: #47b2e4;
+    color: #4F6F52;
     text-decoration: none;
 }
   
 a:hover {
-    color: #73c5eb;
+    color: #739072;
     text-decoration: none;
 }
 
