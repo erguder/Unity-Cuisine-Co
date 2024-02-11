@@ -1,6 +1,6 @@
 #hero {
     width: 100%;
-    height: 98vh;
+    height: 115vh;
 }
   
 #hero .hero {
@@ -14,6 +14,7 @@
   width: 100%;
   height: auto;
   z-index: 1;
+  opacity: 0.9;
 }
 
 .caption-info {
@@ -26,17 +27,11 @@
 }
 
 #hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
-}
-  
-#hero p {
-    color: #fff;
-    margin-bottom: 50px;
-    font-size: 24px;
+  margin: 0 0 30% 0;
+  font-size: 7em;
+  font-weight: 800;
+  color: #ECE3CE;
+  font-family: "Dancing Script";
 }
   
 @media (max-width: 991px) {
