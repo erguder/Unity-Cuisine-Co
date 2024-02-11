@@ -1,23 +1,26 @@
 <section id="featured" class="menu section-bg">
-    <div data-aos="fade-up">
-
-        <div class="section-title">
-            <h2>FEATURED</h2>
-        </div>
-
-        <div *ngIf="randomFoodItems" class="row">
-            <div *ngFor="let food of randomFoodItems" class="col-lg-3 filter-{{ food.category }}" data-aos="zoom-in" data-aos-delay="100">
-                <div class="meal d-flex align-items-start">
-                    <div class="pic"><img src="assets/img/food/{{food.image}}" class="img-fluid"></div>
-                    <div class="meal-info">
-                        <h4>{{ food.name }}</h4>
-                        <span>Category: {{ food.category }}</span>
-                        <span>Origin: {{ food.origin }}</span>
+    <div class="featured">
+        
+        <div data-aos="fade-up">
+    
+            <div class="section-title">
+                <h2>Have You Tried?</h2>
+            </div>
+    
+            <div *ngIf="randomFoodItems" class="row">
+                <div *ngFor="let food of randomFoodItems" class="col-lg-3 filter-{{ food.category }}" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="meal d-flex align-items-start">
+                        <div class="pic"><img src="assets/img/food/{{food.image}}" class="img-fluid"></div>
+                        <div class="meal-info">
+                            <h4>{{ food.name }}</h4>
+                            <span>Category: {{ food.category }}</span>
+                            <span>Origin: {{ food.origin }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
+    
         </div>
-
     </div>
 </section>
 

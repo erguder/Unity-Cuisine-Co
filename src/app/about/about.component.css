@@ -8,6 +8,10 @@ body{
     padding: 30px;
     border-radius: 5px;
 } 
+  
+.col-lg-4 .member{
+  box-shadow: 4px 4px 15px #3A4D39;
+}
 
 .about .content h3 {
     font-weight: 600;
@@ -95,7 +99,7 @@ body{
     font-weight: 700;
     margin-bottom: 5px;
     font-size: 20px;
-    color: #37517e;
+    color: #3A4D39;
   }
   
   .team .member span {
@@ -156,4 +160,18 @@ body{
   
   .team .member .social a+a {
     margin-left: 8px;
+  }
+
+  .row h3{
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #3A4D39;
+  }
+
+  .row p{
+    font-weight: 500;
+    margin-bottom: 12px;
+    font-size: 20px;
+    color: #3A4D39;
   }

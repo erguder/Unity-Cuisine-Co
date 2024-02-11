@@ -3,6 +3,19 @@
     margin-top: 40px;
 }
 
+.featured{
+    width: 92%;
+    margin-left: 4%;
+    padding-left: 1%;
+    padding-right: 1%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: #739072;
+}
+
 .menu .meal {
     position: relative;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -80,3 +93,5 @@
     margin: 10px 0 0 0;
     font-size: 14px;
 }
+
+  

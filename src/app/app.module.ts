@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { ContentComponent } from './content/content.component';
-import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataService } from './services/data.service';
 import { FeaturedComponent } from './featured/featured.component';
@@ -20,7 +19,6 @@ import { MenuComponent } from './menu/menu.component';
     HeroComponent,
     AboutComponent,
     ContentComponent,
-    ContactComponent,
     FooterComponent,
     FeaturedComponent,
     MenuComponent
