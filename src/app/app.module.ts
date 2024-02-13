@@ -9,7 +9,6 @@ import { AboutComponent } from './about/about.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataService } from './services/data.service';
-import { FeaturedComponent } from './featured/featured.component';
 import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
@@ -20,7 +19,6 @@ import { MenuComponent } from './menu/menu.component';
     AboutComponent,
     ContentComponent,
     FooterComponent,
-    FeaturedComponent,
     MenuComponent
   ],
   imports: [
